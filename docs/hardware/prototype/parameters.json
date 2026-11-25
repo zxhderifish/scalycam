@@ -1,0 +1,31 @@
+{
+  "status": "unprinted engineering prototype; fit and strength not accepted",
+  "documented": {
+    "board_envelope_mm": [21.0, 17.8, 15.0],
+    "board_source": "https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/",
+    "cell_envelope_mm": [76.0, 13.5, 13.5],
+    "cell_hole_pitch_mm": 15.0,
+    "cell_source": "https://www.amazon.com/dp/B07BGXXHSW; seller dimensions, actual part unmeasured",
+    "cell_threads": "M4/M5, end orientation must be checked"
+  },
+  "design": {
+    "base_size": 150.0, "base_height": 24.0, "base_floor": 4.0, "base_wall": 3.0,
+    "tray_size": 140.0, "tray_thickness": 5.0, "tray_rib_depth": 3.0,
+    "fixed_spacer": 6.0, "free_spacer": 6.0,
+    "cell_end_hole_margin": 5.0, "fixed_clearance_dia": 5.5, "free_clearance_dia": 4.5,
+    "stand_width": 160.0, "stand_depth": 170.0, "stand_floor": 8.0,
+    "stand_front_y": 85.0, "pillar_y": 115.0,
+    "pillar_width": 32.0, "pillar_depth": 24.0, "joint_overlap": 30.0,
+    "joint_gap": 0.3, "socket_clearance": 0.6,
+    "camera_working_height": 320.0, "cradle_height": 22.0, "assumed_lens_plane_z": 3.0,
+    "lens_aperture_x": 17.0, "lens_aperture_y": 14.0, "lens_offset_x": 0.0, "lens_offset_y": 0.0,
+    "bolt_clearance": 4.5, "max_print_dimension": 180.0
+  },
+  "assumptions": [
+    "End-hole margin, thread orientation, lens optical center and assembled lens plane are unmeasured; print coupons first.",
+    "320 mm is a proposed working distance, not a verified focus or field-of-view result.",
+    "HX711 rests on an insulating foam pad and is restrained by ties; breakout envelope not used as a precision mating surface.",
+    "All joints use metal screws and nuts. No purchased stand, motor, display, battery or metal stiffener in this prototype.",
+    "Part count and structural performance are engineering proposals, not physical acceptance. Load, creep and tip tests remain required."
+  ]
+}

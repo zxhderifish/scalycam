@@ -1,0 +1,215 @@
+{
+  "status": "digital_geometry_checks_passed; physical_acceptance_pending",
+  "part_count": 10,
+  "assembled_printed_part_count": 8,
+  "parts": [
+    {
+      "part": "scale_base",
+      "solid_count": 1,
+      "cad_valid": true,
+      "volume_mm3": 126384.39596561353,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "print_bbox_mm": [
+        150.0,
+        150.0,
+        24.0
+      ],
+      "fits_180mm": true,
+      "sha256": "9c62bad08a9539bee544ce3b906c9b0992f3af0caa7b3314aa5b38f9b5304822"
+    },
+    {
+      "part": "top_plate_USE_A_DISH",
+      "solid_count": 1,
+      "cad_valid": true,
+      "volume_mm3": 103842.70689452028,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "print_bbox_mm": [
+        140.0,
+        140.0,
+        11.0
+      ],
+      "fits_180mm": true,
+      "sha256": "7df49b32424a55a862c89294ed4926d2abdfcabe8a7fad65e1a20c45ca13ee42"
+    },
+    {
+      "part": "stand_base",
+      "solid_count": 1,
+      "cad_valid": true,
+      "volume_mm3": 260506.2913472526,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "print_bbox_mm": [
+        160.0,
+        170.0,
+        48.0
+      ],
+      "fits_180mm": true,
+      "sha256": "8ae5ded8d704860282ea18b0b8dc88264dfca5ae4f0ab0514a05c122092a02c5"
+    },
+    {
+      "part": "pillar_lower",
+      "solid_count": 1,
+      "cad_valid": true,
+      "volume_mm3": 96440.80242455144,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "print_bbox_mm": [
+        143.1666717529297,
+        24.0,
+        32.0
+      ],
+      "fits_180mm": true,
+      "sha256": "5ab7d9b1b36ba1b9d80c8e22c6c5c2d154621a38ec3cead06af6a6760568283b"
+    },
+    {
+      "part": "pillar_middle",
+      "solid_count": 1,
+      "cad_valid": true,
+      "volume_mm3": 85417.74623074601,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "print_bbox_mm": [
+        143.1666717529297,
+        24.0,
+        32.0
+      ],
+      "fits_180mm": true,
+      "sha256": "3cffde62c9f10294fbcb397a310fa749444864561202a0999523f59d7b130706"
+    },
+    {
+      "part": "pillar_upper",
+      "solid_count": 1,
+      "cad_valid": true,
+      "volume_mm3": 96440.80242455142,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "print_bbox_mm": [
+        143.1666717529297,
+        24.0,
+        32.0
+      ],
+      "fits_180mm": true,
+      "sha256": "92d7f117d09d77cb79ae3ff45c4ced7828524f817d6821cc5e20d9c1f3f0dfd0"
+    },
+    {
+      "part": "camera_arm",
+      "solid_count": 1,
+      "cad_valid": true,
+      "volume_mm3": 102194.9735445301,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "print_bbox_mm": [
+        44.0,
+        154.0,
+        64.0
+      ],
+      "fits_180mm": true,
+      "sha256": "146668f2dde602b5feb240402c9c25a5f3bbff2b664b2060011fa33f9480293c"
+    },
+    {
+      "part": "camera_cradle",
+      "solid_count": 1,
+      "cad_valid": true,
+      "volume_mm3": 9847.47099171434,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "print_bbox_mm": [
+        60.0,
+        40.0,
+        22.0
+      ],
+      "fits_180mm": true,
+      "sha256": "3bdc48b061f7332dd2873cb1478b25b3a9b51e75d8cd6d5b9e1950466352729f"
+    },
+    {
+      "part": "fit_coupon_load_cell",
+      "solid_count": 1,
+      "cad_valid": true,
+      "volume_mm3": 9955.048712981148,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "print_bbox_mm": [
+        65.0,
+        30.0,
+        6.0
+      ],
+      "fits_180mm": true,
+      "sha256": "389b1ce71664d06c02200500c36acc673388505e21a58bd70fbd04a79d39daf0"
+    },
+    {
+      "part": "fit_coupon_xiao",
+      "solid_count": 1,
+      "cad_valid": true,
+      "volume_mm3": 1914.0,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "print_bbox_mm": [
+        30.0,
+        26.0,
+        11.0
+      ],
+      "fits_180mm": true,
+      "sha256": "317d95c77a8fe272ea05e24b7f3a4940395d6424da31a29cd2e668d93a18422c"
+    }
+  ],
+  "positive_volume_collisions": [],
+  "tray_underside_above_base_rim_mm": 5.5,
+  "lowest_rib_above_base_rim_mm": 2.5,
+  "cell_free_end_above_floor_mm": 6.0,
+  "stand_scale_plan_clearance_mm": 10.0,
+  "nominal_camera_working_height_mm": 320.0,
+  "pillar_segment_length_mm": 143.16666666666666,
+  "placements_mm": {
+    "scale_base": [
+      0,
+      0,
+      0
+    ],
+    "top_plate_USE_A_DISH": [
+      0,
+      0,
+      29.5
+    ],
+    "stand_base": [
+      0,
+      85.0,
+      0
+    ],
+    "pillar_lower": [
+      0,
+      115.0,
+      8.0
+    ],
+    "pillar_middle": [
+      0,
+      115.0,
+      121.16666666666666
+    ],
+    "pillar_upper": [
+      0,
+      115.0,
+      234.33333333333331
+    ],
+    "camera_arm": [
+      0,
+      115.0,
+      341.5
+    ],
+    "camera_cradle": [
+      0,
+      0,
+      351.5
+    ]
+  },
+  "physical_pending": [
+    "actual hole pitch/thread ends",
+    "camera envelope and optical center",
+    "lens focus and frame coverage",
+    "print fit",
+    "tip/creep/load and corner-load tests",
+    "wiring clearance and strain relief"
+  ],
+  "generated_by": "primary-reviewed CadQuery source; no printer contacted"
+}

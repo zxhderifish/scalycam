@@ -11,7 +11,7 @@ This is a source-only public release with a fresh Git history. It contains no pe
 - `backend/prompts/` — recognition and nutrition prompts.
 - `backend/DEPLOYMENT.md` — configuring your own backend.
 
-Compatible scale firmware and hardware are not included. BLE and native storage require a native development build; Expo Go and a browser do not provide the complete device workflow.
+The [mechanical CAD files](docs/hardware/README.md) include a printable prototype and the integrated-fold v3 concept. Using a compatible scale requires separate firmware. BLE and native storage require a native development build; Expo Go and a browser do not provide the complete device workflow.
 
 ## App setup
 
@@ -56,5 +56,7 @@ Do not commit populated environment files, personal exports, backups, uploads or
 ## License
 
 Original ScalyCam application and backend code is available under the [MIT License](LICENSE), copyright 2026 zxhderifish. This replaces the earlier proprietary designation for the owner's code in this public release.
+
+The [ScalyCam mechanical designs](docs/hardware/README.md#license) are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 Third-party code and dependencies retain their own licenses. The Expo template's existing copyright and MIT notice is preserved in [app/LICENSE](app/LICENSE). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the dependency license inventory; the root MIT grant does not relicense those components.

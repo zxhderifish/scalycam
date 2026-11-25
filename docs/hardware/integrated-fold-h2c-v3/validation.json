@@ -1,0 +1,769 @@
+{
+  "status": "component-aware connected-fold concept; not fabrication release",
+  "printer": "Bambu Lab H2C",
+  "all_parts_remain_attached": true,
+  "arm_hinges": 2,
+  "attached_cover_hinges": 1,
+  "internal_cable_disconnects": 0,
+  "user_actions": "fold upper arm, fold lower arm, close attached cover",
+  "parameters": {
+    "base_xy_mm": [
+      210.0,
+      220.0
+    ],
+    "lower_length_mm": 155.0,
+    "upper_length_mm": 155.0,
+    "lateral_arm_spacing_mm": 40,
+    "base_pivot": [
+      65.0,
+      180.0,
+      65.0
+    ],
+    "elbow_pivot": [
+      105.0,
+      180.0,
+      220.0
+    ],
+    "deployed_upper_angle_deg": 35
+  },
+  "states": {
+    "deployed": {
+      "envelope_mm": [
+        210.03,
+        356.36,
+        362.99
+      ],
+      "parts": 21
+    },
+    "head_folded": {
+      "envelope_mm": [
+        210.03,
+        356.36,
+        241.76
+      ],
+      "parts": 21
+    },
+    "arms_stowed": {
+      "envelope_mm": [
+        210.03,
+        356.36,
+        241.76
+      ],
+      "parts": 21
+    },
+    "closed": {
+      "envelope_mm": [
+        210.03,
+        220.03,
+        100.03
+      ],
+      "parts": 21
+    }
+  },
+  "sampled_frames": [
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        35,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        40,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        45,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        50,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        55,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        60,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        65,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        70,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        75,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        80,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        85,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        90,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        95,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        100,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        105,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        110,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        115,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        120,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        125,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        130,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        135,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        140,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        145,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        150,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        155,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        160,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        165,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        170,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        175,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_upper",
+      "angles": [
+        0,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        0,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        5,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        10,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        15,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        20,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        25,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        30,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        35,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        40,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        45,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        50,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        55,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        60,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        65,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        70,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        75,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        80,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        85,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "fold_lower",
+      "angles": [
+        90,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -110
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -105
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -100
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -95
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -90
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -85
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -80
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -75
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -70
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -65
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -60
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -55
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -50
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -45
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -40
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -35
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -30
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -25
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -20
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -15
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -10
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        -5
+      ],
+      "collisions": []
+    },
+    {
+      "stage": "close_cover",
+      "angles": [
+        90,
+        180,
+        0
+      ],
+      "collisions": []
+    }
+  ],
+  "sampled_collision_count": 0,
+  "proposed_lens_to_tray_mm": 286.96856686479373,
+  "camera_offset_from_tray_center_mm": 9.095652365587867,
+  "pending": [
+    "complete hinge/bridge retention and automatic locking pins",
+    "removable cable covers and service loops",
+    "continuous motion sweep",
+    "real component tolerances and USB/power routing",
+    "strength/tip/fatigue/transport load",
+    "camera focus/FOV",
+    "Bambu Studio slicing"
+  ],
+  "printable": false,
+  "closed_moving_envelope_containment": [
+    {
+      "part": "lower_arm_U_channel",
+      "within_closed_inner_box": true
+    },
+    {
+      "part": "elbow_axis_RESERVED",
+      "within_closed_inner_box": true
+    },
+    {
+      "part": "elbow_bridge_ENVELOPE",
+      "within_closed_inner_box": true
+    },
+    {
+      "part": "upper_arm_U_channel",
+      "within_closed_inner_box": true
+    },
+    {
+      "part": "fixed_head_neck",
+      "within_closed_inner_box": true
+    },
+    {
+      "part": "camera_case_ENVELOPE",
+      "within_closed_inner_box": true
+    },
+    {
+      "part": "camera_service_lid",
+      "within_closed_inner_box": true
+    },
+    {
+      "part": "XIAO_Sense_nominal",
+      "within_closed_inner_box": true
+    },
+    {
+      "part": "antenna_RESERVED",
+      "within_closed_inner_box": true
+    },
+    {
+      "part": "lens_RESERVED",
+      "within_closed_inner_box": true
+    }
+  ],
+  "minimum_cover_roof_clearance_mm": 6.44
+}
