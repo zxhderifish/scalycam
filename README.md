@@ -11,7 +11,16 @@ This is a source-only public release with a fresh Git history. It contains no pe
 - `backend/prompts/` — recognition and nutrition prompts.
 - `backend/DEPLOYMENT.md` — configuring your own backend.
 
-The [mechanical CAD files](docs/hardware/README.md) include a printable prototype and the integrated-fold v3 concept. Using a compatible scale requires separate firmware. BLE and native storage require a native development build; Expo Go and a browser do not provide the complete device workflow.
+Using a compatible scale requires separate firmware. BLE and native storage require a native development build; Expo Go and a browser do not provide the complete device workflow.
+
+## CAD previews
+
+| Integrated Fold v3 | Separate-stand prototype |
+| --- | --- |
+| ![CAD preview of the deployed Integrated Fold v3](docs/hardware/integrated-fold-h2c-v3/deployed-cad.png) | ![CAD assembly preview of the separate-stand prototype](docs/hardware/prototype/assembly-preview.png) |
+| [Deployed STEP](docs/hardware/integrated-fold-h2c-v3/deployed.step) · [Closed STEP](docs/hardware/integrated-fold-h2c-v3/closed.step) | [Assembly STEP](docs/hardware/prototype/assembly.step) · [Printable STL files](docs/hardware/prototype/stl/) |
+
+[Hardware documentation](docs/hardware/README.md) includes all model poses, editable CadQuery sources, and assembly instructions.
 
 ## App setup
 

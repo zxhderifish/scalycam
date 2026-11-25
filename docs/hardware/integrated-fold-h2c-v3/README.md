@@ -1,61 +1,61 @@
-# ScalyCam 一体收纳版 v3 — H2C
+# ScalyCam Integrated Fold v3 for the Bambu Lab H2C
 
-这是根据“长杆容易受压、随身收纳不便、不要快拆”的反馈重做的方案。此前单轴长杆版本保留作历史记录，本版作为当前深化方向。
+The long arm in the earlier design was vulnerable to pressure and awkward to carry. In v3, the shorter arm sections fold into the base and stay attached during packing. The earlier single-pivot design remains a historical reference.
 
-## 本版决定
+## Design decisions
 
-- **所有组件始终连在一起**：底座、两段支臂、相机头、保护盖不需要拆下，内部线缆不拔插。
-- **两个支臂转轴**：底部与肘部各一个，外侧不用手拧旋钮。相机头固定在上臂上，不再增加水平横臂或头部转轴。
-- **完整保护盖**：盖子与底座铰接，闭合后没有外伸杆件。盖的支撑落在底座边框，不能把运输挤压力传给称重台。
-- **实际操作是三步**：折上臂 → 折下臂 → 合盖。两次折臂后仍需合盖，没有把三步宣传成两步。电源为外部USB；运输时外部供电线正常拔下，内部线保持连接。
+- The base, two arm sections, camera head, and protective lid stay connected throughout folding. The internal wiring also stays connected.
+- The arm pivots at the base and elbow. The camera head is fixed to the upper arm. Folding requires neither external hand knobs nor an extra crossarm or camera pivot.
+- The protective lid hinges to the base and encloses the folded arms. Its support rests on the base perimeter to keep packing loads off the weighing platform.
+- Packing takes three steps. Fold the upper arm, fold the lower arm, then close the lid. The device runs from external USB power. Disconnect the external cable before packing.
 
-## 外观与元件
+## Dimensions and components
 
-底座为约210×220 mm圆角盒，闭合包络约100 mm高，接近一个厚饭盒。为保护镜头和称重机构接受这个厚度，不追求把未验证的结构画薄。脚垫、完整锁扣和实际铰链外形仍可能改变最终尺寸。
+The rounded base measures approximately 210 × 220 mm. The closed enclosure is about 100 mm high, roughly the size of a deep lunchbox. This height leaves space to protect the lens and weighing mechanism. The feet, latch, and finished hinge geometry may change the final dimensions.
 
-展开后：下臂竖立，上臂向前倾斜35°，相机固定安装角度使镜头朝下。两段臂各155 mm，横向错开40 mm，折后并排，不互相穿透。盖子向后打开110°，使用时需要额外的后方空间。
+When deployed, the lower arm stands vertically and the upper arm tilts forward at 35°. The fixed camera mount points the lens down. Both arms are 155 mm long and offset laterally by 40 mm so they can fold side by side. The lid opens 110° to the rear and needs clearance behind the base.
 
-| 元件 | 位置与处理 |
-|---|---|
-| 主控与相机 | 顶部同仓，沿用XIAO ESP32-S3 Sense 21×17.8×15 mm名义叠板包络，不延长相机排线。相机壳初步外包络46×40×32 mm，配维修盖与镜头孔。 |
-| 天线 | 头部塑料区域，6×30×3 mm仅为预留；需要根据实际天线调整。 |
-| 称重梁 | 底座内，76×13.5×13.5 mm是此前卖家标称尺寸；固定端接底座，活动端接浮动秤台。 |
-| HX711 | 底座后侧独立区，40×25×12 mm是预留；梁到放大板的信号线保持短且松弛。 |
-| 秤台 | 140×140 mm，顶部标高38 mm，所有重量通过称重梁传递；收纳臂悬在上方，不搭在秤台上。 |
-| USB供电 | 改为底座固定侧口的设计目标；需要内部5 V供电线/USB延长连接到顶部XIAO，插座和线束尚未详细选型。不能将5 V误接3V3。 |
-| 内部线束 | HX711的3V3/GND/DT/SCK与供电线走臂内开口槽，制造版用可拆线槽盖。两轴留受保护的弯曲余量，远离锁销夹口；目前线束没有参加CAD扫掠。 |
-| 电池 | 没有选定，本版不声称内置电池、续航或脱离USB独立运行。 |
+| Component | Placement and design requirements |
+| --- | --- |
+| Controller and camera | Share a compartment at the top. The nominal XIAO ESP32-S3 Sense board stack is 21 × 17.8 × 15 mm and uses its existing camera ribbon cable. The preliminary camera housing envelope is 46 × 40 × 32 mm, with a service cover and lens opening. |
+| Antenna | A 6 × 30 × 3 mm space is reserved in the plastic camera head. Adjust this space to suit the actual antenna. |
+| Load cell | Inside the base. The seller's nominal dimensions are 76 × 13.5 × 13.5 mm. The fixed end attaches to the base and the live end supports the floating platform. |
+| HX711 | Reserve 40 × 25 × 12 mm in a separate area at the back of the base. Keep the signal leads between the load cell and amplifier short, with enough slack to avoid pulling on the cell. |
+| Weighing platform | 140 × 140 mm, with its top at 38 mm. The load cell carries the platform load. The stowed arms sit above the platform with clearance. |
+| USB power | The design calls for a fixed side port on the base and an internal 5 V supply lead or USB extension to the XIAO at the top. The connector and harness still need to be selected. Keep the 5 V supply off the 3V3 pin. |
+| Wiring harness | Route HX711 3V3/GND/DT/SCK and power through channels in the arms. The manufacturing design calls for removable channel covers and protected service loops at both pivots, clear of the lock-pin pinch points. The CAD sweep currently excludes the harness. |
+| Battery | Battery selection is pending. The current design assumes external USB power. |
 
-## 如何收起与锁住
+## Folding and locking
 
-1. 托住相机头，按肘部释放键，将上臂反折到下臂旁。
-2. 托住折好的臂，按底部释放键，整体向前放平；相机头进入底座后侧保护区域。
-3. 合上连体盖并扣住。打开时顺序相反。
+1. Support the camera head, press the elbow release, and fold the upper arm back alongside the lower arm.
+2. Support the folded arms, press the base release, and lower both arms forward into the base. The camera head stows in the protected area at the rear.
+3. Close and latch the attached lid. Reverse the sequence to deploy the camera.
 
-设计目标是金属定位销＋机械止挡承载，到位自动锁住；释放键只退销。**锁销、弹簧、止挡、肘部跨接件的承载连接尚未完成机械设计**，当前CAD只留出轴和释放机构位置。不会依靠旋钮摩擦力或薄塑料卡舌宣称已经锁稳。
+The locking concept uses metal locating pins and mechanical stops to carry loads. The pins should engage automatically at the intended positions, and the release buttons should only retract them. **The pins, springs, stops, and load-bearing elbow link still need mechanical design.** The current CAD reserves space for the pivot and release mechanisms. The design does not rely on knob friction or thin plastic catches for structural locking.
 
-## 已完成的CAD与验证
+## CAD files and validation
 
-这一版先验证尺寸，再出外观图。四个状态用同一套零件、同一组旋转变换生成，没有在收纳时偷偷缩短杆件或更换相机头。
+The geometry was checked before the concept rendering was made. All four poses share the same parts and rotation transforms.
 
-- [展开STEP](deployed.step) / [展开预览](deployed-cad.png)
-- [上臂折回STEP](head_folded.step) / [预览](head_folded-cad.png)
-- [双臂收好STEP](arms_stowed.step) / [预览](arms_stowed-cad.png)
-- [完整合盖STEP](closed.step) / [预览](closed-cad.png)
-- [外观概念图](product-concept.png)
-- `model.py` 是可复现CadQuery源文件；`validation.json` 是本次计算结果。
+- [Deployed STEP](deployed.step) · [Deployed preview](deployed-cad.png)
+- [Upper arm folded STEP](head_folded.step) · [Upper arm folded preview](head_folded-cad.png)
+- [Both arms stowed STEP](arms_stowed.step) · [Both arms stowed preview](arms_stowed-cad.png)
+- [Lid closed STEP](closed.step) · [Lid closed preview](closed-cad.png)
+- [Product appearance concept](product-concept-en.png)
+- [CadQuery source](model.py) · [Validation results](validation.json)
 
-在首次扫掠中，发现头部折回会触碰秤台，保护盖的转轴位置也会导致与底壳相撞；已提高臂轴位置10 mm并把盖轴移到后缘，重新计算。
+The first sweep found that the folded camera head touched the weighing platform and that the lid could hit the lower shell. The arm pivot was raised by 10 mm and the lid pivot was moved to the rear edge before running the checks again.
 
-现有检查涵盖72个抽样姿态（上臂35°→180°、下臂0°→90°、盖子−110°→0°），没有发现所检查的活动臂/相机与秤台、底座元件及保护盖之间的正体积干涉；上臂与下臂也进行了分离检查。所有活动组件占位在合盖时均落入保护盖内部包络。各独立实体有效。
+The sweep checked 72 sampled poses across upper-arm rotation from 35° to 180°, lower-arm rotation from 0° to 90°, and lid rotation from −110° to 0°. It found no positive-volume interference between the checked moving arms or camera and the platform, base components, or lid. The two arms were also checked against each other. In the closed pose, all moving component envelopes fit inside the protective lid. Every modeled solid passed the validity check.
 
-名义镜头到秤台约287 mm，镜头相对秤台中心前后偏约9 mm；实际镜头视野和对焦须实测。H2C的尺寸允许底座、盖和短臂各自打印，不再沿用180 mm单件假设。尚未切片或打印。
+The nominal lens-to-platform distance is about 287 mm, with about 9 mm of front-to-back offset from the platform center. Field of view and focus need physical testing. The H2C build volume has room for the base, lid, and shorter arm sections as separate parts, beyond the earlier 180 mm single-part design limit. Slicing and test printing are pending.
 
-**当前交付是元件布局与折叠机构概念，不是制造放行文件。** 检查未包含完整轴座/锁扣接口、连续扫掠、线束弯曲、真实器件公差、USB压降、运输载荷、抗倾倒、疲劳及实物取景。STEP中标记ENVELOPE/RESERVED的结构不能直接导出STL制造。盖子的几何能闭合，不等于已通过背包挤压测试。
+**These files describe component placement and folding geometry. Manufacturing validation is pending.** The checks still need detailed pivot mounts and latch interfaces, a continuous motion sweep, cable bend checks, actual component tolerances, USB voltage-drop measurements, transport loads, tip resistance, fatigue, and camera framing tests. Treat STEP bodies marked `ENVELOPE` or `RESERVED` as packaging references. A closed CAD pose establishes geometric fit. Compression in a packed bag still needs physical testing.
 
-## 接下来的制造化工作
+## Work before fabrication
 
-先细化两处锁销与肘部跨接的承载路径，再补可拆线槽盖、弯曲余量及USB连接；制作关节/器件试配件；确认真实镜头高度后完成全套零件、H2C切片与试打。沿用现有硬件，型号尺寸未知项保持可调，不凭AI图上的电路板外观钻孔。
+Detail the load paths through both locking pins and the elbow link. Add removable cable covers, strain relief around the pivots, and the internal USB connection. Make fit coupons for the joints and components. Verify the camera height with the actual lens before completing the parts and test-printing them on the H2C. Use the existing hardware and keep unconfirmed dimensions adjustable until the relevant components can be measured.
 
-H2C规格参考：https://blog.bambulab.com/bambu-lab-h2c-where-multi-material-vortek-system-meets-engineering-precision/
-相机板规格参考：https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/
+- [Bambu Lab H2C specifications](https://blog.bambulab.com/bambu-lab-h2c-where-multi-material-vortek-system-meets-engineering-precision/)
+- [Seeed Studio XIAO ESP32-S3 Sense specifications](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/)

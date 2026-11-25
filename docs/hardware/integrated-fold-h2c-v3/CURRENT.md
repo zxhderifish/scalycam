@@ -1,5 +1,5 @@
-# 当前方案
+# Current design
 
-当前深化方向为 [一体收纳版 v3](README.md)：两段连体折臂、连体保护盖，不快拆，闭合约210×220×100 mm。
+[Integrated Fold v3](README.md) is the current design direction. Both arm sections and the protective lid stay attached. The closed enclosure measures approximately 210 × 220 × 100 mm.
 
-此前长杆单轴版本与快拆方案保留为历史参考，不再作为当前方向。本版为布局与折叠概念，尚非可打印制造文件。
+The earlier single-pivot long-arm design and quick-release options are historical references. This version documents the component layout and folding mechanism. The manufacturing design is still in progress.

@@ -1,57 +1,59 @@
-# ScalyCam 可打印原型装配说明
+# ScalyCam printable prototype assembly guide
 
-这是未打印验证的工程原型。已检查 CAD 实体、STL 水密性、180 mm 打印包络和装配件之间的正体积干涉；实际孔距、镜头位置、承载、刚度、焦距和抗倾倒尚未验收。
+This engineering prototype is ready for fit testing. The CAD solids, watertight STL meshes, 180 mm build envelope, and assembled-part interference have been checked digitally. Printing, actual hole spacing, lens position, load capacity, stiffness, focus, and tip resistance still need physical validation.
 
-## 先打印两块试配件
+## Print the two fit coupons first
 
-先打印 `stl/fit_coupon_load_cell.stl` 和 `stl/fit_coupon_xiao.stl`，收到元件后核对。称重梁按卖家标称 76 × 13.5 × 13.5 mm、同端两孔间距 15 mm 建模；端孔距端面 5 mm 和 M4/M5 方向仍是设计假设。不要仅凭“5 kg HX711 套件”认为孔位一定相同。
+Print [the load cell fit coupon](stl/fit_coupon_load_cell.stl) and [the XIAO fit coupon](stl/fit_coupon_xiao.stl) and compare them with your components. The load cell model uses the seller's nominal dimensions of 76 × 13.5 × 13.5 mm and 15 mm hole spacing at each end. The outer holes are assumed to be 5 mm from the ends, and the M4/M5 end assignment still needs verification. Kits labeled “5 kg HX711” can vary in hole position and thread size.
 
-相机板包络按 21 × 17.8 × 15 mm，镜头朝下。板子不能靠裸焊点承重；加绝缘软垫，扎带固定 PCB 边缘，避开镜头、天线和连接器。先核对开孔，再打印完整支架。
+The camera board envelope is 21 × 17.8 × 15 mm, with the lens facing down. Support the board with an insulating pad and secure its edges with cable ties. Keep pressure off exposed solder joints and keep the lens, antenna, and connector clear. Check the openings before printing the full stand.
 
-## 打印件
+## Printed parts
 
-| 文件 | 数量 | 作用 |
-|---|---:|---|
-| scale_base.stl | 1 | 称重梁固定端、HX711 安放区 |
-| top_plate_USE_A_DISH.stl | 1 | 称重梁活动端托盘；上面放独立餐盘 |
-| stand_base.stl | 1 | 与秤分离的相机支架底座 |
-| pillar_lower / middle / upper.stl | 各 1 | 三段柱，搭接处用螺丝连接 |
-| camera_arm.stl | 1 | 顶部悬臂 |
-| camera_cradle.stl | 1 | 开放式相机托架 |
+| File | Quantity | Function |
+| --- | ---: | --- |
+| `scale_base.stl` | 1 | Mounts the fixed end of the load cell and holds the HX711. |
+| `top_plate_USE_A_DISH.stl` | 1 | Attaches to the live end of the load cell and supports a separate dish. |
+| `stand_base.stl` | 1 | Camera stand base, separate from the scale. |
+| `pillar_lower.stl`, `pillar_middle.stl`, `pillar_upper.stl` | 1 each | Three pillar segments that bolt together at overlap joints. |
+| `camera_arm.stl` | 1 | Cantilever at the top of the stand. |
+| `camera_cradle.stl` | 1 | Open camera mount. |
 
-STL 已旋转到建议打印朝向并落到 Z=0；STEP 保留零件设计坐标，用于 CAD 编辑，不能直接套用 STL 的装配位置。所有 STL 的最大尺寸小于 180 mm。建议先以 0.2 mm 层高、4 道壁、30–40% 填充作试打起点；柱段已平放，切片时逐层检查搭接台阶和悬臂需要的支撑。参数不是强度认证。
+The STL files use the suggested print orientations, with each part placed at Z=0. The STEP files retain the design coordinates for CAD editing. For assembly positions, use the STEP model. Every STL has a maximum dimension below 180 mm.
 
-## 紧固件预备清单
+For an initial test print, start at 0.2 mm layer height, four walls, and 30–40% infill. The pillar segments are already oriented horizontally. Review the sliced layers at the overlap steps and check whether the cantilever needs support. These settings are starting values for fit testing. Structural strength still needs testing.
 
-以下长度是依照当前 CAD 的候选值，安装时按实际孔深核对，不能拧到底顶坏称重梁。
+## Fasteners and supplies
 
-| 紧固件 | 数量 | 位置与长度依据 |
-|---|---:|---|
-| M5 × 10 内六角圆柱头 | 2 | 秤底固定端；塑料承压厚度 4 mm，约 6 mm 入牙 |
-| M4 × 12 内六角圆柱头 | 2 | 托盘活动端；塑料总厚度 7 mm，约 5 mm 入牙 |
-| M4 × 55 螺栓 + 螺母 | 4 套 | 柱底与顶端插座各两颗，外宽约 44 mm |
-| M4 × 35 螺栓 + 螺母 | 4 套 | 两处柱段搭接，每处两颗，厚度约 24 mm |
-| M4 × 45 螺栓 + 螺母 | 2 套 | 相机托架与悬臂，夹持高度约 34 mm |
-| M4 平垫圈 | 20 | 支架通孔两侧使用；托盘沉孔内不使用大于孔径的垫圈 |
-| 小扎带、绝缘软垫、底座防滑脚垫 | 按实际需要 | 电路板固定、线缆卸力、独立底座防滑 |
+The suggested lengths come from the CAD model. Measure the actual hole depths before fitting fasteners to the load cell. A screw that bottoms out can damage the cell.
 
-不要把结构螺丝拧进塑料当作自攻连接；支架使用穿透螺栓与金属螺母。相机与 HX711 扎带固定，不要求额外精密 PCB 螺孔。
+| Item | Quantity | Location and sizing |
+| --- | ---: | --- |
+| M5 × 10 socket-head cap screw | 2 | Fixed end at the scale base, with 4 mm of load-bearing plastic and about 6 mm of thread engagement. |
+| M4 × 12 socket-head cap screw | 2 | Live end at the platform, through 7 mm of plastic with about 5 mm of thread engagement. |
+| M4 × 55 bolt and nut | 4 sets | Two each at the bottom and top pillar sockets, approximately 44 mm wide. |
+| M4 × 35 bolt and nut | 4 sets | Two per pillar overlap joint, approximately 24 mm thick. |
+| M4 × 45 bolt and nut | 2 sets | Camera cradle to cantilever, with about 34 mm of clamped thickness. |
+| M4 flat washer | 20 | Use on both sides of the stand's through-holes. At the platform counterbores, use washers that fit the recess. |
+| Small cable ties, insulating pads, and non-slip feet | As needed | Secure the boards, relieve cable strain, and keep the bases from slipping. |
 
-## 装配顺序
+Use through-bolts with metal nuts for the stand. Avoid using the structural fasteners as self-tapping screws in the printed plastic. The camera and HX711 use cable ties and require no precision PCB mounting holes.
 
-1. 秤底固定称重梁的固定端，梁的另一端悬空。梁底与壳底的设计间隙为 6 mm；梁上的应变片、导线和活动段均不能接触外壳。
-2. 将托盘固定到梁的活动端。托盘下面的最低加强筋距壳沿 2.5 mm；不加四角支撑脚，不让托盘或餐盘搭到壳沿，否则重量会绕过传感器。
-3. HX711 放在秤底后侧绝缘垫上，用预留槽扎带固定；导线留柔软弯曲余量，不能拉扯称重梁。
-4. 独立支架底座插入下柱，装两颗穿透螺栓。依次安装中柱、上柱，每个搭接处两颗螺栓，最后固定悬臂和相机托架。
-5. 支架放在秤后方，两底座至少保留 10 mm 间隙。USB 与传感器线沿柱外侧扎带卸力，线不能碰托盘；不要跨底座绑紧到把两者拉在一起。
-6. 暂不放食物，通电确认镜头画面、USB 插头和天线均无遮挡。名义镜头到托盘距离 320 mm 是待验证值；没有保证这个距离已对焦或能覆盖任意餐盘。
+## Assembly
 
-## 到货后的验收
+1. Attach the fixed end of the load cell to the scale base and leave the other end free. The design leaves 6 mm below the load cell. Keep the strain gauges, wiring, and moving end clear of the housing.
+2. Attach the platform to the live end of the load cell. The lowest stiffening rib has 2.5 mm of clearance above the housing rim. Keep the platform and dish clear of the rim and omit corner support feet, so the load passes through the sensor.
+3. Place the HX711 on an insulating pad at the rear of the scale base and secure it through the cable-tie slots. Leave enough slack to keep the wires from pulling on the load cell.
+4. Fit the lower pillar into the camera stand base and install two through-bolts. Install the middle and upper segments with two bolts per overlap joint, then attach the cantilever and camera cradle.
+5. Place the stand behind the scale and leave at least 10 mm between the bases. Secure the USB and sensor cables along the outside of the pillar for strain relief. Keep them clear of the platform and avoid tying the two bases tightly together.
+6. Power on with an empty platform. Check the image and make sure the USB plug and antenna are unobstructed. The nominal lens-to-platform distance is 320 mm. Verify focus and dish coverage with the actual camera.
 
-- 孔距、螺纹端向、入牙深度、相机包络、开孔与 USB 可达性。
-- 空载及放置 100 g、500 g、1000 g 时，托盘均不碰壳；先小载荷验证。传感器额定 5 kg 不代表打印结构已通过 5 kg 承载。
-- 中央及四角重复称重、卸载回零、至少 10 次重复性、放置 30 分钟后的漂移。
-- 相机在实际光照下对焦、完整覆盖餐盘，支架轻触后的晃动与恢复；确认底座不会倾倒。
-- 断电重启不自动去皮；离线照片保留，重新连接后成功保存再删除设备队列。
+## Hardware acceptance checks
 
-可编辑入口为 `parameters.json` + `generate.py`，另附每个零件的 STEP 和完整 `assembly.step`。按[建模环境说明](../README.md#重新生成模型)安装依赖，修改后在本目录运行 `python generate.py`，再运行 `python render_vtk.py` 生成实际 CAD 预览；`render.py` 负责二维受力示意图，但它也会写预览图，因此先运行它、最后运行 `render_vtk.py`。
+- Check hole spacing, which thread is at each end of the load cell, thread engagement, camera fit, openings, and USB access.
+- Check that the platform clears the housing when unloaded and under 100 g, 500 g, and 1,000 g loads. Start with the smallest load. The sensor's 5 kg rating applies to the sensor. Printed-part load capacity still needs testing.
+- Repeat center and corner load measurements and check the return to zero after unloading. Run at least 10 repeatability trials and check drift after 30 minutes.
+- Check camera focus and full dish coverage under actual lighting. Lightly touch the stand to observe wobble and recovery, and verify that the base resists tipping.
+- Verify that rebooting does not automatically tare the scale. Check that offline photos stay queued on the device and are removed only after successful saving on reconnection.
+
+Edit [`parameters.json`](parameters.json) and [`generate.py`](generate.py) to change the design. The individual STEP files and [assembly STEP](assembly.step) are included. Set up the [CAD environment](../README.md#regenerate-the-models), then run `python generate.py` from this directory. To refresh the load-path diagram, run `python render.py`. Run `python render_vtk.py` last to leave the rendered CAD assembly as the preview image.
